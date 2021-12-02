@@ -1,0 +1,10 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+  color: var(--main-color);
+}

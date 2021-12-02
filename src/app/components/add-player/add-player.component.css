@@ -1,0 +1,9 @@
+.form-control{
+  width: auto;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 13px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 13px;
+}

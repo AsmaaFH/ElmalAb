@@ -1,0 +1,23 @@
+<nav class="navbar">
+  <img
+    src="../../../assets/previous.png"
+    height="20"
+    width="20"
+    class="mr-2 pointer"
+    title="previous"
+    *ngIf="router.url === '/groups'"
+    routerLinkActiveOptions="{ exact: true }"
+    routerLink="/"
+  />
+  <div class="logo">ElMal'Ab<img src="../../../assets/ball.png" /></div>
+  <img
+    src="../../../assets/next.png"
+    height="20"
+    width="20"
+    class="ml-2 pointer"
+    title="next"
+    *ngIf="router.url === '/' && playersNum == 21"
+    routerLinkActiveOptions="{ exact: true }"
+    routerLink="/groups"
+  />
+</nav>

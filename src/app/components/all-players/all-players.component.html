@@ -1,0 +1,36 @@
+<button
+  *ngIf="playersLength > 0"
+  class="btn text-danger border-danger p-1 m-3"
+  (click)="clear()"
+>
+  Clear AL  Players
+</button>
+<div class="d-flex justify-content-center">
+  <div>
+    <div class="d-sm-flex align-items-center text-center">
+      <h4>All Players</h4>
+      <span class="mx-1 text-success">
+        <span>{{ playersLength }}</span> players</span
+      >
+      <button
+        *ngIf="playersLength == 21"
+        class="btn text-primary p-1 mx-2 border rounded text-bold"
+        routerLinkActiveOptions="{ exact: true }"
+        routerLink="groups"
+      >
+        Make Groups
+      </button>
+    </div>
+
+    <div class="d-flex justify-content-center">
+    </div>
+    <div class="all-players">
+      <ol>
+        <li class="player" *ngFor="let player of players">
+          {{ player.name
+          }}<img (click)="delete(player.id)" src="../../../assets/remove.png" />
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+:root {
+  --main-color: #206847;
+}
+input:focus, .form-control:focus, button:focus, .btn:focus, .btn:active{
+  outline: none;
+  box-shadow: none;
+}
+ul{
+  list-style: none;
+}
+body{
+  position: relative;
+  font-size: 14px;
+  height: 100vh;
+}
+@media(max-width:575px){
+  body{
+    font-size: 12px;
+  }
+}
+.form-control{
+  padding: 0.175rem 0.5rem;
+}
+.btn{
+  font-size: 14px;
+}
+h4{
+  font-size: 20px;
+}
+@media(max-width:575px){
+  .btn{
+    font-size: 12px;
+  }
+  h4{
+    font-size: 16px;
+  }
+}
+.container{
+  height: auto;
+  padding: 0;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+@media(max-width:575px){
+  .container{
+    width: 90%;
+  }
+}
+.pointer{
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+<div class="d-flex justify-content-center my-3">
+  <input
+    autofocus
+    type="text"
+    #playerName
+    class="form-control"
+    placeholder="Name(enter for quick action)"
+    (keyup.enter)="addPlayer(playerName.value)"
+    [readonly]="PlayerNumInAddPlayer>=21"
+  />
+  <button
+    class="mx-2 btn btn-success"
+    (click)="addPlayer(playerName.value)"
+    [disabled]="PlayerNumInAddPlayer >= 21"
+  >
+    Add
+  </button>
+</div>
+<p class="text-center text-danger">{{ wrongPlayerName }}</p>

@@ -1,4 +1,18 @@
 # ElmalAb
+###
+This App Allow the players (27 players) to devide themselvies randomly in 3 groups.
+
+- I used firebase to my small database.
+
+-I used rxjx library (behaviour subject) to read the number of players added. according to this number will allow the navigation to the groups or not,  as can't navigate while players num < 21 players. 
+
+- I used the lazy loading to load the groups Module once the admin want to devide the players.
+
+- I used a service to listen from database, and injected the service on my components that use this service.
+
+- I used directives, @input, @output in my App.
+
+- I used bootstrap to facilicate my style.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
 
